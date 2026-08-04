@@ -1,0 +1,169 @@
+[ 4 серпня 2026 р. 14:40 ] ⁨Иван⁩: /* Головний екран */
+
+.hero {
+
+    min-height: 100vh;
+
+    background:
+
+        linear-gradient(
+
+            rgba(0,0,0,0.65),
+
+            rgba(0,0,0,0.75)
+
+        ),
+
+        url("images/header.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 20px 80px;
+
+}
+
+/* Заголовок */
+
+.hero h1 {
+
+    font-size: 72px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    color: #ff7b00;
+
+    margin-bottom: 20px;
+
+    text-shadow: 0 0 20px rgba(255,123,0,0.4);
+
+}
+
+/* Підзаголовок */
+
+.hero p {
+
+    font-size: 32px;
+
+    color: #ffffff;
+
+    margin-bottom: 35px;
+
+}
+
+/* Кнопки */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+.btn-call {
+
+    background: #ff7b00;
+
+    color: white;
+
+    padding: 18px 40px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+.btn-call:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.btn-whatsapp {
+
+    background: #25d366;
+
+    color: white;
+
+    padding: 18px 40px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+.btn-whatsapp:hover {
+
+    transform: translateY(-3px);
+
+}
+
+/* Телефонний блок зверху */
+
+.top-contact-bar {
+
+    background: rgba(0,0,0,0.9);
+
+    border-bottom: 1px solid #ff7b00;
+
+}
+
+/* Мобільна версія */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero p {
+
+        font-size: 20px;
+
+    }
+
+    .btn-call,
+
+    .btn-whatsapp {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}
